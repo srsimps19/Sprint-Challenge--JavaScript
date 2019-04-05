@@ -6,11 +6,11 @@ class CuboidMaker1 {
     this.newHeight = attributes.height;
   }
 
-  volume = function() {
+  volume() {
     return this.newLength * this.newWidth * this.newHeight;
   }
 
-  surfaceArea = function() {
+  surfaceArea() {
     return 2 * (this.newLength * this.newWidth + this.newLength * this.newHeight + this.newWidth * this.newHeight);
   }
 
@@ -19,7 +19,7 @@ class CuboidMaker1 {
 
 
 
-  const cuboid1 = new CuboidMaker({
+  const cuboid1 = new CuboidMaker1({
     length: 4,
     width: 5,
     height: 5

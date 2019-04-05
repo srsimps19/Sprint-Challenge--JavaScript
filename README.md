@@ -38,18 +38,18 @@ A method is a function which is a property of an object.
 
 3. What is closure?
 
-A closure is an inner function that gives you access to an outer function’s scope.
+ a closure is a variable nested within a function that can be utilized by other functions also within the original functions scope.
 
 4. Describe the four rules of the 'this' keyword.
 
-1.`this.` always tries to bind to the window first.
-2.`this.` always looks to the left of the . to find out what it is referencing.
-3.if `this.` is inside a `new` constructor function `this.` is bound to the new object being created. 
-4.`this.` is explicitly bound if it is passed to either `.call()`, `.apply()`, or `.bind()`.
+Window Binding: `this.` always tries to bind to the window first, i.e. you have a function that has nothing but `console.log(this)` within it. In this case, `this` is the window.
+Implicit Binding: `this.` always looks to the left of the . to find out what it is referencing.
+New Binding: if `this.` is inside a `new` constructor function `this.` is bound to the new object being created. 
+Explicit binding: `this.` is explicitly bound if it is passed to either `.call()`, `.apply()`, or `.bind()`. 
 
 5. Why do we need super() in an extended class?
 
-We need it because the `super()` keyword is used to access and call functions on an object's parent.
+We need it because the `super()` function is used to tell a parent's constructor to be concerned with the child's attributes. i.e the parent has a speak method that we want the child to be able to use.
 
 ## Project Set up
 
